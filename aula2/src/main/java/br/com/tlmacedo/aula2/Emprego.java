@@ -11,22 +11,13 @@ import javax.validation.constraints.Size;
 @Entity
 public class Emprego {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-
-    @NotNull
-    @Size(min = 4)
     private String titulo;
-
-    @NotNull
-    @Size(min = 3)
     private String empresa;
-
-    @NotNull
-    @Size(min = 10)
     private String descricao;
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public long getId() {
         return id;
     }
@@ -35,6 +26,8 @@ public class Emprego {
         this.id = id;
     }
 
+    @NotNull
+    @Size(min = 4)
     public String getTitulo() {
         return titulo;
     }
@@ -43,6 +36,8 @@ public class Emprego {
         this.titulo = titulo;
     }
 
+    @NotNull
+    @Size(min = 3)
     public String getEmpresa() {
         return empresa;
     }
@@ -51,6 +46,8 @@ public class Emprego {
         this.empresa = empresa;
     }
 
+    @NotNull
+    @Size(min = 10)
     public String getDescricao() {
         return descricao;
     }

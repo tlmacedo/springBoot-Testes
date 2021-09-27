@@ -8,15 +8,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="aula2" />
         <module name="aula1" />
+        <module name="app1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="app1" target="11" />
       <module name="aula1" target="11" />
       <module name="aula2" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="app1" options="-parameters" />
       <module name="aula1" options="-parameters" />
       <module name="aula2" options="-parameters" />
     </option>
