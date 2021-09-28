@@ -1,23 +1,30 @@
 package br.com.tlmacedo.aula2;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 @Entity
 public class Emprego {
 
-    private long id;
-    private String titulo;
-    private String empresa;
-    private String descricao;
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
+
+    @NotEmpty()
+    @Min(4)
+    private String titulo;
+
+    @NotEmpty
+    @Min(3)
+    private String empresa;
+
+    @NotEmpty
+    @Min(10)
+    private String descricao;
+
     public long getId() {
         return id;
     }
@@ -26,8 +33,6 @@ public class Emprego {
         this.id = id;
     }
 
-    @NotNull
-    @Size(min = 4)
     public String getTitulo() {
         return titulo;
     }
@@ -36,8 +41,6 @@ public class Emprego {
         this.titulo = titulo;
     }
 
-    @NotNull
-    @Size(min = 3)
     public String getEmpresa() {
         return empresa;
     }
@@ -46,8 +49,6 @@ public class Emprego {
         this.empresa = empresa;
     }
 
-    @NotNull
-    @Size(min = 10)
     public String getDescricao() {
         return descricao;
     }

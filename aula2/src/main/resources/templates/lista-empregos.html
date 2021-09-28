@@ -7,11 +7,12 @@
 <body>
 
 <h1>Formulário de emprego</h1>
-<a href="/add">Adicionar um novo emprego</a><br>
+<a href="/add-emp">Adicionar um novo emprego</a><br>
+<a href="/add">Adicionar nova pessoa</a><br>
 
 <div th:each="emprego : ${empregos}">
     <h4 th:inline="text">[[${emprego.titulo}]] na [[${emprego.empresa}]]</h4>
-    <p th:text="${emprego.descricao}"></p>
+    <p th:text="${emprego.descricao}"/>
 </div>
 </body>
 </html>
