@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/app1/pom.xml" />
         <option value="$PROJECT_DIR$/restservice/pom.xml" />
         <option value="$PROJECT_DIR$/groovy/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/spring-security/pom.xml" />
       </list>
     </option>
   </component>

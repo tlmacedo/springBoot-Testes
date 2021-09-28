@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/aula2/aula2.iml" filepath="$PROJECT_DIR$/aula2/aula2.iml" />
       <module fileurl="file://$PROJECT_DIR$/groovy/groovy.iml" filepath="$PROJECT_DIR$/groovy/groovy.iml" />
       <module fileurl="file://$PROJECT_DIR$/restservice/restservice.iml" filepath="$PROJECT_DIR$/restservice/restservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/spring-security/spring-security.iml" filepath="$PROJECT_DIR$/demo/spring-security/spring-security.iml" />
     </modules>
   </component>
 </project>
